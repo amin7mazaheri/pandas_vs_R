@@ -21,6 +21,7 @@ df1=df.iloc[:,[3,4]]#Same as above
 df['Reviews'].isna()#Find the missing values in Reviews (a vector of True and False values)
 sum(df['Reviews'].isna())#the # of missing values
 df['Type'].unique()#find the levels of variable Type
+df.dropna()  #return df without any null
 
 df.index[df['Reviews'].isna()]#Find the Reviews missing values
 np.where(df['Reviews'].isna())
